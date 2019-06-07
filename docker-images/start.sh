@@ -14,7 +14,7 @@ echo "### Build apache_rp"
 docker build -t res/apache_rp ./apache-reverse-proxy/
 
 echo "### Run apache_static container"
-docker run -d --name apache_static res/apache_php
+docker run -d --name apache_static res/apache_static
 
 echo "### Run express_dynamic"
 docker run -d --name express_students res/express_students
